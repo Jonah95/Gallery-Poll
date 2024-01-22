@@ -1,0 +1,99 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+
+
+  <!-- -------------------- Stylesheet -------------------- -->
+  <link rel="stylesheet" href="./assets/css/gallery-styles.css">
+
+
+  <!-- -------------------- Google Font -------------------- -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <!-- -------------------- Ionicons -------------------- -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1 alt="Annalect Chennai Creative Services"></h1>Hello,<span class="bld-logo">&nbspAnnalectuals</span>🤘</h1>
+</header>
+
+<main>
+  <!-- <section class="section-container">
+    <div class="container">
+      <button class="logout">Logout</button>
+      <h1 class="greeting">Hello Jonah</h1>
+    </div>
+  </section>
+   -->
+  <section class="section-bck-btn">
+    <div class="bck-btn">
+      <a href="./home.html">
+        <div class="bck-btn-main">
+          <div class="bck-btn-img">
+            <ion-icon name="return-up-back-outline"></ion-icon>
+          </div>
+          <div class="bck-btn-img">
+            <h6 class="main-head">Go back</h6>
+          </div>
+        </div>
+        </a>
+    </div> 
+  </section>
+
+
+
+  <section class="gallery-img">
+    <div class="gallery">
+      <!-- Add your images with the "image" class -->
+      <div class="image" data-subheading="Priyanka Mohan" data-title="Innocence Amidst Nature" data-description="In 'Innocence Amidst Nature,' a small girl sits in a vast field, plucking wildflowers. The vibrant canvas captures her pure joy, emphasizing the beauty of simplicity and the harmony with nature." >
+          <img src="https://onedrive.live.com/embed?resid=E99907F199B4EA8A%2128269&authkey=%21AD9fsMS4RIxdFBU&width=300&height=300" alt="Image 1">
+      </div>
+
+      <div class="image" data-title="Image 2" data-description="Description for Image 2" data-subheading="Subheading 2">
+          <img src="https://onedrive.live.com/embed?resid=E99907F199B4EA8A%2128270&authkey=%21AFP1IqlAWZZiUSM&width=300&height=300" alt="Image 2">
+      </div>
+      
+      <div class="image" data-title="Image 3" data-description="Description for Image 3" data-subheading="Subheading 2">
+        <img src="https://onedrive.live.com/embed?resid=E99907F199B4EA8A%2128268&authkey=%21AOW-cnd6qRAO6-E&width=300&height=300" alt="Image 3">
+      </div>
+      
+      <div class="image" data-title="Image 4" data-description="Description for Image 4" data-subheading="Subheading 2">
+        <img src="https://onedrive.live.com/embed?resid=E99907F199B4EA8A%2128271&authkey=%21AJDQJMoyRd7a2sc&width=300&height=300" alt="Image 4">
+      </div>
+      
+      <div class="image" data-title="Image 5" data-description="Description for Image 5" data-subheading="Subheading 2">
+        <img src="https://onedrive.live.com/embed?resid=E99907F199B4EA8A%2128274&authkey=%21AGOzV-_qsI2E6U0&width=300&height=300" alt="Image 5">
+      </div>
+  
+      <!-- Popup container -->
+      <div class="popup" id="popup">
+          <div class="popup-content">
+              <span class="close" id="close">&times;</span>
+              
+                <img id="popupImage" alt="Popup Image">
+              <div class="image-details">
+                  <h2 id="popupTitle"></h2>
+                  <p id="popupSubheading"></p>
+                  <p id="popupDescription"></p>
+                  <p id="voteCount"></p>
+                  <a href="#" target="_blank">Raw Image</a>
+                  <button class="vote-btn" id="voteButton">Vote👆</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+
+  </main>
+    <script src="./assets/js/gallery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </body>
+  </html>

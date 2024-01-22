@@ -1,0 +1,257 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --white-color: #ffffff;
+  --black-color: #000000;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Figtree", sans-serif;
+  --h1-font-size: 1.75rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .813rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button {
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+}
+
+/* body {
+  color: var(--white-color);
+} */
+
+input,
+button {
+  border: none;
+  outline: none;
+  background-color: #D9D9D9;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* body {
+  overflow: hidden;
+} */
+
+/*=============== LOGIN ===============*/
+.section-login {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  column-gap: 5rem;
+  align-content: center;
+  height: 100dvh;
+}
+
+.grid-control {
+  display: grid;
+  /* justify-content: center;
+  align-content: center; */
+}
+
+.grid-control .img-login {
+  width: 50rem;
+  margin: 0 auto;
+}
+
+.grid-control .login-logo {
+  margin: 0 auto;
+}
+
+.login {
+  position: relative;
+}
+
+/* .img-login {
+  margin: 10rem 0;
+}
+
+.login-logo {
+  margin: 0 100px;
+} */
+
+.login-form {
+  /* background-color: #1a1a1a1a;
+  border: 2px solid #ad3636; */
+  margin-inline: 1.5rem;
+  padding: 2.5rem 1.5rem;
+}
+
+.login-title {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: 1rem;
+}
+
+.login-subtitle {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-content, .login-box {
+  display: grid;
+}
+
+.login-content {
+  row-gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.login-box {
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.login-icon, .login-eye {
+  font-size: 1.25rem;
+}
+
+.login-input {
+  width: 100%;
+  padding-block: .8rem;
+  background: #00000010;
+  color: #000;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  padding-left: 10px;
+}
+
+.login-box-input {
+  position: relative;
+}
+
+.login-label {
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  font-weight: var(--font-medium);
+  transition: top .3s, font-size .3s;
+}
+
+.login-eye {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.login-box:nth-child(2) input {
+  padding-right: 1.8rem;
+}
+
+.login-check, .login-check-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-check {
+  margin-bottom: 1.5rem;
+}
+
+.login-check-label {
+  font-size: var(--small-font-size);
+}
+
+.login-check-group {
+  column-gap: .5rem;
+}
+
+.login-check-input {
+  width: 16px;
+  height: 16px;
+}
+
+.login-forgot {
+  color: #000;
+}
+
+.login-forgot:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #6D15A7;
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  color: #fff;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  transition: all ease 200ms;
+}
+
+.login-button:hover {
+  background-color: hsl(276, 78%, 50%);
+}
+
+.login-register {
+  text-align: center;
+  color: #000;
+}
+
+.login-register a {
+  color: #6D15A7;
+  font-weight: var(--font-medium);
+}
+
+.login-register a:hover {
+  text-decoration: underline;
+}
+
+/* Input focus move up label */
+.login-input:focus + .login-label {
+  top: -15px;
+  font-size: var(--small-font-size);
+}
+
+/* Input focus sticky top label */
+.login-input:not(:placeholder-shown).login-input:not(:focus) + .login-label {
+  top: -15px;
+  font-size: var(--small-font-size);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+.part1 {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.part1 img {
+  width: 50rem;
+}
+

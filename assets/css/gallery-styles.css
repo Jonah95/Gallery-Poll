@@ -1,0 +1,184 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --white-color: #ffffff;
+  --black-color: #000000;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Figtree", sans-serif;
+  --h1-font-size: 1.75rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .813rem;
+  --heading-space: 2rem 0;
+  --main-font-color: #212529;
+  --secondary-font-color: #868e96;
+  --secondary-font-size: 1.8rem;
+  --para-line-height: 3.5rem;
+  --bottom-space: 2.5rem;
+}
+
+/*========== Font weight ==========*/
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button {
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+}
+
+
+
+input,
+button {
+  border: none;
+  outline: none;
+  background-color: #D9D9D9;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bck-btn-img {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.bck.btn {
+  font-size: var(--h1-font-size);
+}
+
+.bck-btn-main {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 7rem;
+  padding: 0 20rem;
+  font-size: 2rem;
+}
+
+.section-bck-btn, .gallery-img {
+  margin: 0 auto;
+  max-width: 80rem;
+}
+
+.gallery-img {
+  margin: 2rem auto;
+}
+
+.bld-logo {
+  font-weight: bold;
+}
+
+.main-head {
+  display: inline-block;
+  margin: 0 0.5rem;
+  font-size: var(--normal-font-size);
+}
+
+.bck-btn-main {
+  color: var(--main-font-color);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.image-details {
+  margin-top: 20px;
+  padding-left: 1rem;
+}
+
+.vote-btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #6D15A7;
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  color: #fff;
+  margin-top: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: all ease 300ms;
+}
+  
+.vote-btn:hover {
+  background-color: hsl(276, 78%, 50%);
+}
+
+
+#popupTitle, #popupSubheading, #popupDescription {
+  margin-bottom: 1rem;
+}
+
+#popupSubheading {
+  color: #767676;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+#popupDescription {
+  line-height: 2rem;
+  font-size: 17px;
+}
+
+#popupImage{
+  max-width: 100%;
+  /* max-height: 100%; */
+}
