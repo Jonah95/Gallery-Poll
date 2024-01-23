@@ -6,13 +6,13 @@ const User = require('./models/user-details'); // Assuming you have a user model
 
 // Route for handling user registration
 router.post('/register', async (req, res) => {
-  const { username, password } = req.body;
+  const { fullname, email, password } = req.body;
 
   try {
     // Check if the username already exists
-    const existingUser = await User.findOne({ username });
+    const existingUser = await User.findOne({ email });
     if (existingUser) {
-      return res.status(400).json({ message: 'Username already exists' });
+      return res.status(400).json({ message: 'Name already exists' });
     }
 
     // Hash the password before saving it to the database
@@ -20,7 +20,8 @@ router.post('/register', async (req, res) => {
 
     // Create a new user
     const newUser = new User({
-      username,
+      fullname,
+      email,
       password: hashedPassword,
     });
 
